@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head><title> How To HouseBreak A Baby Dinosaur</title></head>
+<body>
+<script>
+//Prompts to get user input  
+// Added extra words so you can get more user input
+var noun0 = prompt("Please enter a noun: ")
+var noun1 = prompt("Please enter a noun again: ")
+var noun2 = prompt("Please enter a noun again: ")
+var person0 =  prompt("Please enter the name of someone in the room: ")
+var person1 =  prompt("Please enter the name of someone in the room again: ")
+var person2 =  prompt("Please enter the name of someone in the room again: ")
+var letter0 = prompt("Please enter a random letter: ")
+var letter1 = prompt("Please enter a random letter again: ")
+var letter2 = prompt("Please enter a random letter again: ")
+var adj0 = prompt("Please enter an adjective: ")
+var adj1 = prompt("Please enter an adjective again: ")
+var adj2 = prompt("Please enter an adjective again: ")
+var adj3 = prompt("Please enter an adjective again: ")
+var verbPast0 = prompt("Please enter a verb (past tense): ")
+var verbPast1 = prompt("Please enter a verb (past tense) again: ")
+var adv0 = prompt("Please enter an adverb: ")
+var adv1 = prompt("Please enter an adverb again: ")
+var adv2 = prompt("Please enter an adverb again: ")
+var adv3 = prompt("Please enter an adverb again: ")
+var nounPlural0 = prompt("Please enter a noun (plural): ")
+var nounPlural1 = prompt("Please enter a noun (plural) again: ")
+var nounPlural2 = prompt("Please enter a noun (plural) again: ")
+var nounPlural3 = prompt("Please enter a noun (plural) again: ")
+var body0 = prompt("Please enter a part of the body: ")
+var body1 = prompt("Please enter a part of the body again: ")
+var body2 = prompt("Please enter a part of the body again: ")
+var body3 = prompt("Please enter a part of the body again: ")
+var bodyPlural0 = prompt("Please enter a part of the body (plural): ")
+var bodyPlural1 = prompt("Please enter a part of the body (plural) again: ")
+var bodyPlural2 = prompt("Please enter a part of the body (plural) again: ")
+var bodyPlural3 = prompt("Please enter a part of the body (plural) again: ")
+
+//Arrays made from the prompts
+var nouns = [noun0,noun1,noun2]
+var names = [person0,person1,person2]
+var letters = [letter0,letter1,letter2]
+var adjective = [adj0,adj1,adj2,,adj3]
+var pastVerb = [verbPast0,verbPast1]
+var adverb = [adv0,adv1,adv2,adv3]
+var pluralNoun= [nounPlural0,nounPlural1,nounPlural2,nounPlural3]
+var bodyParts= [body0,body1,body2,body3]
+var pluralBody = [bodyPlural0,bodyPlural1,bodyPlural2,bodyPlural3]
+
+//Randomizes the arrays
+var randomNouns = nouns[Math.floor(Math.random()*nouns.length)]
+var randomNames = names[Math.floor(Math.random()*name.length)]
+var randomLetters = letters[Math.floor(Math.random()*letters.length)]
+var randomAdjective = adjective[Math.floor(Math.random()*adjective.length)]
+var randomPastV = pastVerb[Math.floor(Math.random()*pastVerb.length)]
+var randomAdverb = adverb[Math.floor(Math.random()*adverb.length)]
+var randomPluralN = pluralNoun[Math.floor(Math.random()*pluralNoun.length)] 
+var randomBody = bodyParts[Math.floor(Math.random()*bodyParts.length)]
+var randomBodyPlural = pluralBody[Math.floor(Math.random()*pluralBody.length)]
+
+//Actual Madlib
+var story = ["According to the world-famous ",randomNouns," trainer, ",randomNames," housebreaking a baby dinosaur is as easy as A, B, ",randomLetters, "His/Her current \
+",randomAdjective,"-selling book, Down, Dinosaur, Down! guarnetees that your pet will be potty-",randomPastV, " in one week or your ",randomNouns, "back. This is filled with \
+",randomAdjective," advice it's very ",randomAdverb," written.Here are a few examples: \
+1. Before you begin training, spread ",randomPluralN," on all the ",randomPluralN,"in your house.\
+2. Alwasy call your baby dinosuar by name and look it directly in the ",randomBody,"when giving a command\
+3. If your baby dinosaur accidnetally wets the",randomNouns, "stay calm and do not spake its ",randomBody,"\
+4. All baby dinosaurs resonp to praise. WHen yours perforsm well, reward it by patting its",randomBodyPlural,"or by scratching its",randomBodyPlural,"."].join(" ")
+alert(story)
+
+</script>
+</body>
+</html>

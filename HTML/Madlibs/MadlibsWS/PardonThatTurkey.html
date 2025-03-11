@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Pardon that Turkey</title>
+</head>
+<body>
+    <script>
+        var pnoun0 = prompt("Please Enter a plural noun ");
+        var pnoun1 = prompt("Please Enter a plural noun ");
+        var pnoun2 = prompt("Please Enter a plural noun ");
+        var adj0 = prompt("Please Enter a adjective ");
+        var adj1 = prompt("Please Enter a adjective ");
+        var adj2 = prompt("Please Enter a adjective ");
+        var adj3 = prompt("Please Enter a adjective ");
+        var adj4 = prompt("Please Enter a adjective ");
+        var adj5 = prompt("Please Enter a adjective ");
+        var noun0 = prompt("Please Enter a noun ");
+        var noun1 = prompt("Please Enter a noun ");
+        var noun2 = prompt("Please Enter a noun ");
+        var noun3 = prompt("Please Enter a noun ");
+        var color0 = prompt("Please Enter a color ");
+        var color1 = prompt("Please Enter a color ");
+        var color2 = prompt("Please Enter a color ");
+        var color3 = prompt("Please Enter a color ");
+        var place0 = prompt("Please Enter an place");
+        var place1 = prompt("Please Enter an place");
+        var place2 = prompt("Please Enter an place");
+        var place3 = prompt("Please Enter an place");
+        var Verb0 = prompt("Please Enter a verb")
+        var Verb1 = prompt("Please Enter a verb")
+        var Verb2 = prompt("Please Enter a verb")
+        var Verb3 = prompt("Please Enter a verb")
+        var verbpast0 = prompt("Please Enter a past tense verb")
+        var verbpast1 = prompt("Please Enter a past tense verb")
+        var verbpast2 = prompt("Please Enter a past tense verb")
+        var verbpast3 = prompt("Please Enter a past tense verb")
+        var personInTheRoom0 = prompt("Please Enter a Person In The Room ");
+        var personInTheRoom1 = prompt("Please Enter a Person In The Room ");
+        var personInTheRoom2 = prompt("Please Enter a Person In The Room ");
+        var personInTheRoom3 = prompt("Please Enter a Person In The Room ");
+
+
+        var plurals = [pnoun0,pnoun1,pnoun2]
+        var adjec = [adj0,adj1,adj2,adj3,adj4,adj5]
+        var nouns = [noun0,noun1,noun2,noun3]
+        var colors = [color0,color1,color2,color3]
+        var places = [place0,place1,place2,place3]
+        var verbs = [Verb0,Verb1,Verb2,Verb3]
+        var verbpast = [verbpast0,verbpast1,verbpast2,verbpast3]
+        var person = [personInTheRoom0,personInTheRoom1,personInTheRoom2,personInTheRoom3]
+
+        var randomwords = function(words){
+            return words[Math.floor(Math.random()*words.length)]
+
+        }
+        var madlibplay = function() {
+            var story = ["Each year, the president of the United ", randomwords(nouns), " is presented with two ", randomwords(adjec)," \
+turkeys to pardon. That meanshe spares them from being eaten by ", randomwords(plurals), " on Thanksgiving. The president formally pardons the \
+", randomwords(adjec), " birds in the ", randomwords(nouns), " Garden of the ",randomwords(colors), " House, while television \
+", randomwords(plurals), " and families from all over (the) ", randomwords(places), " witness the ",randomwords(adjec), " spectacle. The pardoned turkey \
+get to ",randomwords(verbs), " out the rest of their days on a/an ", randomwords(adjec), " farm at President ", randomwords(person), "'s estate, Mount Vernon. \
+To this day, twenty-two ", randomwords(adjec), " turkeys have been pardoned by the ",randomwords(adjec)," president. To those turkeys, it must feel like they've \
+", randomwords(verbpast), " the lottery!!!"] .join(" ")
+            alert(story)
+        }
+madlibplay()
+    </script>
+</body>

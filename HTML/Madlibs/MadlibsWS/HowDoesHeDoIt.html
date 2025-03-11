@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head><title> How Does He Do It?</title></head>
+    <body>
+        <script>
+            var verbS0 = prompt("Give me a verb ending in 's': ")
+            var verbS1 = prompt("Give me a verb ending in 's': ") 
+            var verbS2 = prompt("Give me a verb ending in 's': ")
+            var noun0 = prompt("Please enter a noun: ")
+            var noun1 = prompt("Please enter a noun: ")
+            var noun2 = prompt("Please enter a noun: ")
+            var noun3 = prompt("Please enter a noun: ")
+            var noun4 = prompt("Please enter a noun: ")
+            var noun5 = prompt("Please enter a noun: ")
+            var nounPlural0 = prompt("Please enter a plural noun: ")
+            var nounPlural1 = prompt("Please enter a plural noun: ")
+            var nounPlural2 = prompt("Please enter a plural noun: ")
+            var nounPlural3 = prompt("Please enter a plural noun: ")
+            var nounPlural4 = prompt("Please enter a plural noun: ")
+            var nounPlural5 = prompt("Please enter a plural noun: ")
+            var verb0 = prompt("Please enter a verb: ")
+            var verb1 = prompt("Please enter a verb: ")
+            var adj0 = prompt("Please enter an adjective ")
+            var adj1 = prompt("Please enter an adjective ")
+            var adj2 = prompt("Please enter an adjective ")
+            var exclamation0 = prompt("Please enter an excalmation: ")
+            var exclamation1 = prompt("Please enter an excalmation: ")
+            var celebrity0 = prompt("please enter the name of a celebrity: ")
+            var celebrity1 = prompt("please enter the name of a celebrity: ")
+
+            var verbEndS = [verbS0,verbS1,verbS2]
+            var nouns = [noun0,noun1,noun2,noun3,noun4,noun5]
+            var pluralNouns = [nounPlural0, nounPlural1, nounPlural2, nounPlural3, nounPlural4,nounPlural5]
+            var verbs = [verb0,verb1]
+            var adjs = [ adj0,adj1,adj2] 
+            var Xclamations = [exclamation0,exclamation1]
+            var celeb = [celebrity0,celebrity1]
+
+            var randomwords = function(words){
+            return words[Math.floor(Math.random()*words.length)]
+
+            }
+            var mad = function(){
+                var story = ["Santa ", randomwords(verbEndS), " around the world in one night. But how? \
+We have the insdie ", randomwords(nouns), "! Unnamed sources inside Santa's workshop tell us Santa is a magical ", randomwords(nouns), ". \
+It's true! He can put millions of ",randomwords(pluralNouns), " into his sack of toys, He shrinks himself to ",randomwords(verbs)," down chimneys. \
+ And he bends time and ", randomwords(nouns), "to visit millions of ", randomwords(pluralNouns)," on Christmas Eve. \
+Santa's ",randomwords(adjs)," sleigh is also magical. Said one anonymous",randomwords(nouns)," inside the workshop, 'Whether there's wind or snow or ", randomwords(pluralNouns),"\
+failling from the sky, the sleigh can travel at the speed of ",randomwords(nouns),"' ",randomwords(Xclamations),"! Then there are the reindeer -\
+ Dasher, Dancer, Prancer, Vixen, Comet, Cupid, DOnner, Blitzen, and ", randomwords(celeb)," They are also magical. They can fly like ",randomwords(pluralNouns),"\
+ throught the sky! So, there you have it- the ",randomwords(adjs)," secret to how Santa delivers ",randomwords(pluralNouns), "to all the world's \
+ ",randomwords(pluralNouns),", finally  revealed for all the ",randomwords(nouns),"to see. It's magic!"].join("")
+ alert(story)
+            }
+mad()
+            
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Hangman </title>
+</head>
+<body>
+    <h1> Hangman!!</h1>
+<script>
+var words = ["dragon","computer","chair","skyrim","monitor","television","arcade","cabinet","mouse","background"
+]
+var randWord = words[Math.floor(Math.random()*words.length)]
+
+var answer = [];
+for (var i = 0; i < randWord.length; i++) {
+ answer[i] = "_";
+}
+
+var remaining_letters = randWord.length;
+var guesses = 20;
+
+while(remaining_letters > 0 && guesses > 0  ) {
+    alert(answer.join(" "))
+
+    var guess = prompt("Guess a letter, or click Cancel to stop playing")
+    if (guess === null){
+        break;
+    } else if (guess.length !== 1){
+        alert("Plrease enter a single letter.")
+    }else {
+        guesses-- ;
+        guess == guess.toLowerCase();
+        for (var j = 0; j<randWord.length; j++){
+            if (randWord[j] === guess){
+            answer[j] = guess;
+            remaining_letters--;
+            }
+        }
+    }
+}
+
+alert (answer.join(" "));
+
+if (guesses > 0) {
+      alert("Good job! The answer was " +randWord);
+    } else {
+      alert("Too bad! The answer was " + randWord);
+    }
+</script>
+</body>
+</html>

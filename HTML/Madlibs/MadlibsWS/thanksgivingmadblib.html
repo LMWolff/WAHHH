@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head><title> Stuffing Yourself Silly</title></head>
+<body>
+<script>
+
+var noun0 = prompt("Please enter a noun: ")
+var noun1 = prompt("Please enter a noun again: ")
+var noun2 = prompt("Please enter a noun again: ")
+var noun3 = prompt("Please enter a noun: ")
+var noun4 = prompt("Please enter a noun: ")
+var noun5 = prompt("Please enter a noun: ")
+var noun6 = prompt("Please enter a noun: ")
+var adj0 = prompt("Please enter an adjective: ")
+var adj1 = prompt("Please enter an adjective again: ")
+var adj2 = prompt("Please enter an adjective again: ")
+var adj3 = prompt("Please enter an adjective again: ")
+var nounPlural0 = prompt("Please enter a noun (plural): ")
+var nounPlural1 = prompt("Please enter a noun (plural) again: ")
+var nounPlural2 = prompt("Please enter a noun (plural) again: ")
+var nounPlural3 = prompt("Please enter a noun (plural) again: ")
+var nounPlural4 = prompt("Please enter a noun (plural) again: ")
+var nounPlural5 = prompt("Please enter a noun (plural) again: ")
+var nounPlural6 = prompt("Please enter a noun (plural) again: ")
+var sillyWord0 = prompt("Please enter a silly sounding word: ")
+var sillyWord1 = prompt("Please enter a silly sounding word: ")
+var sillyWord2 = prompt("Please enter a silly sounding word: ")
+var sillyWord3 = prompt("Please enter a silly sounding word: ")
+var body0 = prompt("Please enter a part of the body: ")
+var body1 = prompt("Please enter a part of the body again: ")
+var body2 = prompt("Please enter a part of the body again: ")
+var body3 = prompt("Please enter a part of the body again: ")
+
+var nouns = [noun0,noun1,noun2,noun3,noun4,noun5,noun6]
+var adjective = [adj0,adj1,adj2,,adj3]
+var pluralNoun= [nounPlural0,nounPlural1,nounPlural2,nounPlural3,nounPlural4,nounPlural5,nounPlural6]
+var sillywords = [sillyWord0,sillyWord1,sillyWord2,sillyWord3]
+var bodyParts= [body0,body1,body2,body3]
+
+var randomWord = function(words){
+    return words[Math.floor(Math.random()*words.length)]
+
+}
+var MadlibPlay = function() {
+    var story = ["Thanksgiving is not a/an", randomWord(nouns), "to be taken lightly. In order to eat as much",randomWord(nouns),"as possible, you need to have a/an \
+    ",randomWord(adjective),"strategy. Follow these handy dandy",randomWord(pluralNoun),"and you, too, can own Thanksgiving.\
+    Tip #1: Load up on the most popular",randomWord(pluralNoun),"first. Mashed",randomWord(pluralNoun)," and gravy tend to be the first to go, and sweet potato",randomWord(pluralNoun),"\
+and cranberry",randomWord(nouns)," go fast, too. Get 'em while they're",randomWord(adjective), "\
+    Tip #2: Stick with light meat. Dark meat contains more",randomWord(sillywords),"than light meat, and everyone know that",randomWord(sillywords),"makes you sleepy \
+when you eat it. If you're sleeping, you won't be able to eat",randomWord(pluralNoun),"!\
+    Tip #3: Don't worry about saving room in your",randomWord(pluralNoun),"show that no matter how much",randomWord(nouns),"you've eaten, you always have \
+room for dessert-especailly if it's",randomWord(nouns),"pie!"].join(" ")
+    alert(story)
+
+}
+MadlibPlay()
+</script>
+</body>
+</html>

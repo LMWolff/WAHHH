@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Peppermint Crush </title>
+</head>
+<body>
+    <script>
+        //Arrays
+        var Name = ["Jenna","Abby","May","Eselda"];  //DO NOT PUT THE N IN Name LOWERCASE
+        var noun = ["cup","can","watch","phone","plate","tile"];
+        var adjectives = ["small", "hairy","huge","tiny","large","thin"];
+        var verbIng = ["running","jumping","sleeping","talking"];
+        var person = ["John","Alex","Daniel","Emmerson","Dustin","Logan","Nelson"];
+        var number =["1","2","3","4","5","6","7","8","9","10","69","77"];
+        var place = ["McDonalds","Office","Dentist","Hell","Walt Disney World"];
+        var pluralnoun = ["Bottles","Headphones","Books","Chairs"];
+        var color= ["green","blue","purple","black","orange"];
+        var verb = ["punch","lie","refuse","shoot","fall"];
+        var occupation = ["teacher","accountant","mechanic","realestate agent"];
+        var food = ["pizza","taco","burger","beesechurger"] ;
+        
+
+        var pickrandomword = function(words){
+            return words[Math.floor(Math.random()*words.length)]
+        }
+        
+        
+        var story = ["Mom: ", pickrandomword(Name) , ", can you show  me how to play Peppermint Crush? I just downloaded it on to my new", pickrandomword(noun), ". It looks", pickrandomword(adjectives) ,"So many colors. How fun! \
+         Daughter: Mom, I cant right now. Im busy " , pickrandomword(verbIng) , "Can't you ask ", pickrandomword(person) ,"? \
+         Mom: I'm not", pickrandomword(verbIng) , "too much here. It'll only take" , pickrandomword(number) , "minutes. PLease? It will give me something to do when I'm at (the)" , pickrandomword(place) , ". \
+         Daughter: Fine! Whatever. Its" , pickrandomword(adjectives) , ". You just move the" , pickrandomword(pluralnoun) , "together. They have to be the same color.\
+         Mom: What about the" , pickrandomword(color) , "ones? can I" , pickrandomword(verb) , "those with the" , pickrandomword(color) , "ones? \
+         Daughter: NO! are you even ", pickrandomword(verbIng) , "? \
+         Mom: Do not yell at me, please. I'm not a/an" ,pickrandomword( occupation) + ",and I'm not some", pickrandomword(adjectives) ,pickrandomword(noun) , ". I am your mother. \
+         Now help me collect more" , pickrandomword(food) , ". I love you."].join(" ")
+        alert(story)
+
+        //John B,  good deserves + points :)
+    </script>
+</body> 
+</html>

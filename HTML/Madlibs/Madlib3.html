@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Peppermint Crush </title>
+</head>
+<body>
+    <script>
+        //Arrays
+        var Name = ["Jenna","Abby","May","Eselda"];  //DO NOT PUT THE N IN Name LOWERCASE
+        var noun = ["cup","can","watch","phone","plate","tile"];
+        var adjectives = ["small", "hairy","huge","tiny","large","thin"];
+        var verbIng = ["running","jumping","sleeping","talking"];
+        var person = ["John","Alex","Daniel","Emmerson","Dustin","Logan","Nelson"];
+        var number =["1","2","3","4","5","6","7","8","9","10","69","77"];
+        var place = ["McDonalds","Office","Dentist","Hell","Walt Disney World"];
+        var pluralnoun = ["Bottles","Headphones","Books","Chairs"];
+        var color= ["green","blue","purple","black","orange"];
+        var verb = ["punch","lie","refuse","shoot","fall"];
+        var occupation = ["teacher","accountant","mechanic","realestate agent"];
+        var food = ["pizza","taco","burger","beesechurger"] ;
+        
+        var randomName = Name[Math.floor(Math.random()*Name.length)];
+        var randomNoun = noun[Math.floor(Math.random()*noun.length)];
+        var randomADJ = adjectives[Math.floor(Math.random()*adjectives.length)];
+        var randomING= verbIng[Math.floor(Math.random()*verbIng.length)];
+        var randomPerson= person[Math.floor(Math.random()*person.length)];
+        var randomNumber = number[Math.floor(Math.random()*number.length)];
+        var randomPlace = place[Math.floor(Math.random()*place.length)];
+        var randomPluralnoun = pluralnoun[Math.floor(Math.random()*pluralnoun.length)];
+        var randomColor = color[Math.floor(Math.random()*color.length)];
+        var randomVerb = verb[Math.floor(Math.random()*verb.length)];
+        var randomJob = occupation[Math.floor(Math.random()*occupation.length)]; 
+        var randomFood = food[Math.floor(Math.random()*food.length)]; 
+        
+        var story = ["Mom: ", randomName , ", can you show  me how to play Peppermint Crush? I just downloaded it on to my new", randomNoun, ". It looks", randomADJ ,"So many colors. How fun! \
+         Daughter: Mom, I cant right now. Im busy " , randomING , "Can't you ask ", randomPerson ,"? \
+         Mom: I'm not", randomING , "too much here. It'll only take" , randomNumber , "minutes. PLease? It will give me something to do when I'm at (the)" , randomPlace , ". \
+         Daughter: Fine! Whatever. Its" , randomADJ , ". You just move the" , randomPluralnoun , "together. They have to be the same color.\
+         Mom: What about the" , randomColor , "ones? can I" , randomVerb , "those with the" , randomColor , "ones? \
+         Daughter: NO! are you even ", randomING , "? \
+         Mom: Do not yell at me, please. I'm not a/an" , randomJob + ",and I'm not some", randomADJ ,randomNoun , ". I am your mother. \
+         Now help me collect more" , randomFood , ". I love you."].join(" ")
+        alert(story)
+
+        //John B,  good deserves + points :)
+    </script>
+</body> 
+</html>

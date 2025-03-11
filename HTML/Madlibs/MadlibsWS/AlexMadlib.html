@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Mad Lib</title>
+</head>
+<body>
+<script>
+
+//The folowing are variables
+var adj0 = prompt("Please Enter a adjective ");
+var adj1 = prompt("Please Enter a adjective ");
+var adj2 = prompt("Please Enter a adjective ");
+var adj3 = prompt("Please Enter a adjective ");
+var adj4 = prompt("Please Enter a adjective ");
+var number0 = prompt("Please Enter a number ");
+var number1 = prompt("Please Enter a number ");
+var number2 = prompt("Please Enter a number ");
+var number3 = prompt("Please Enter a number ");
+var geo0 = prompt("Please enter a geological location ")
+var geo1 = prompt("Please enter a geological location ")
+var geo2 = prompt("Please enter a geological location ")
+var exclam0 = prompt("Please enter an exclamation ")
+var exclam1 = prompt("Please enter an exclamation ")
+var exclam2 = prompt("Please enter an exclamation ")
+var exclam3 = prompt("Please enter an exclamation ")
+var pnoun0 = prompt("Please Enter a plural noun ");
+var pnoun1 = prompt("Please Enter a plural noun ");
+var pnoun2 = prompt("Please Enter a plural noun ");
+var pnoun3 = prompt("Please Enter a plural noun ");
+var personInTheRoom0 = prompt("Please Enter a Person In The Room ");
+var personInTheRoom1 = prompt("Please Enter a Person In The Room ");
+var personInTheRoom2 = prompt("Please Enter a Person In The Room ");
+var personInTheRoom3 = prompt("Please Enter a Person In The Room ");
+var noun0 = prompt("Please Enter a noun ");
+var noun1 = prompt("Please Enter a noun ");
+var adverb0 = prompt("Please Enter a Adverb")
+var adverb1 = prompt("Please Enter a Adverb")
+var adverb2 = prompt("Please Enter a Adverb")
+var adverb3 = prompt("Please Enter a Adverb")
+
+//Joining all the diffent adverbs and stuff
+var adverbs = [adverb0,adverb1,adverb2,adverb3];
+var nouns = [noun0,noun1];
+var adjectives = [adj0,adj1,adj2,adj3,adj4];
+var geos = [geo0,geo1,geo2]
+var excl = [exclam0,exclam1,exclam2,exclam3]
+var pnouns = [pnoun0,pnoun1,pnoun2,pnoun3]
+var personroom = [personInTheRoom0,personInTheRoom1,personInTheRoom2,personInTheRoom3]
+var numbers = [number0,number1,number2,number3]
+
+//Randoming all of them
+var randomnouns = nouns[Math.floor(Math.random()*nouns.length)]
+var randomadjectives = adjectives[Math.floor(Math.random()*adjectives.length)]
+var randomgeos = geos[Math.floor(Math.random()*geos.length)]
+var randomexcl = excl[Math.floor(Math.random()*excl.length)]
+var randompnouns = pnouns[Math.floor(Math.random()*pnouns.length)]
+var randompersonroom = personroom[Math.floor(Math.random()*personroom.length)]
+var randomnumbers = numbers[Math.floor(Math.random()*numbers.length)]
+
+//story
+var story = ["Who am I? I am a/an ",randomadjectives," American. I was born ",randomnumbers," years ago in ",randomgeos,". When my father first saw me, he said",randomexcl,"! I am ",randomnumbers," feet tall and have ",randomadjectives," brown eyes and a/an ",randomadjectives," complexion. My hobby is collection",randompnouns,". I always speak"].join(" ")
+//The script and ending of the body
+alert (story)
+</script>
+</body>
+</html>
