@@ -1,0 +1,16 @@
+create table Employee(
+EmployeeID int,
+Lastname char(25),
+Firstname char(25),
+SocialSercurityNumber CHAR(11) CHECK (SocialSercurityNumber LIKE '___-__-____'),
+PhoneNumber CHAR(12) CHECK (PhoneNumber LIKE '___-___-____'),
+JobTitle char(30),
+StreeetAdress char (30),
+City char (20),
+StateId char (2),
+Zipcode CHAR(10) CHECK (Zipcode LIKE '_____-____'),                                 
+DateofBirth Date,
+Email VARCHAR(300) CHECK (Email LIKE '%@%.%'),
+Department VARCHAR(25),
+SupervisorID CHAR(5),
+)
