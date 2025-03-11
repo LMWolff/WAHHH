@@ -1,0 +1,38 @@
+import time
+import os
+from Simple import *
+#Creator; Evan
+def T_L():
+    noun1=input("please enter a noun: ")
+    noun2=input("please enter a noun: ")
+    noun3=input("please enter a noun: ")
+    noun4=input("please enter a noun: ")
+    pnoun1=input("please enter a plural noun: ")
+    noun5=input("please enter a noun: ")
+    adj1=input("please enter a adjective: ")
+    noun6=input("please enter a noun: ")
+    noun7=input("please enter a noun: ")
+    noun8=input("please enter a noun: ")
+    verbing=input("please enter a verb that ends in ing: ")
+    pob=input("please enter a part of the body: ")
+    noun9=input("please enter a noun: ")
+    noun10=input("please enter a noun: ")
+    pnoun2=input("please enter a plural noun: ")
+    pnoun3=input("please enter a plural noun: ")
+    noun11=input("please enter a noun: ")
+    adj2=input("please enter a adjective: ")
+    pnoun4=input("please enter a plural noun: ")
+    print("A/An",noun1," away from home is most important to a competitive",noun2,".")
+    print("Athletes shoud select a lodge recommends by a travel ",noun3,", the")
+    print("automobile ",noun4,", even relatives or close",pnoun1,".")
+    print("The bedroom should have a king-size",noun5,"with a/an",adj1," mattress to")
+    print("ensure a good night\'s",noun6,".")
+    print("If possible, there should be a hot",noun7,"to relax those aching muscles")
+    print("after a long day of",verbing,".")
+    print("Since relaxation is so important to an athlete's",pob,"the lodge should also provide an outdoor")
+    print("swimming ",noun9,".")
+    print("Other amenities might be a wood-burning ",noun10,", a game room stocked with arcade ",pnoun2," ")
+    print(",game tables for chess or ",pnoun3," as well as a ping-pong",noun11,".")
+    print("Since nutrition is of",adj2," significance to athletes, lodges's")
+    print("restaurant should have a rating of five",pnoun4,".")
+    
