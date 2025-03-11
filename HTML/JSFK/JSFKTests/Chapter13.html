@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head> <title> Chapter 13 Canvas </title></head>
+<body>
+    <canvas id="canvas" width="2000" height="2000"></canvas>
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+<script>
+    var canvas = document.getElementById("canvas")
+    var ctx = canvas.getContext("2d")
+    ctx.fillStyle=("grey")
+    ctx.lineWidth = 2
+
+    var circle = function (x, y, radius, fillCircle) {
+      ctx.beginPath();
+      ctx.arc(x, y, radius, 0, Math.PI * 2, false);
+      if (fillCircle) {
+        ctx.fill();
+      } else {
+        ctx.stroke();
+      }
+    };
+
+    var drawSnowman = function (x, y) {
+      ctx.fillStyle = "Black";
+      ctx.lineWidth = 4;
+
+      circle(x + 50, y + 110, 40, false);
+      circle(x + 50, y + 40, 30, false);
+      circle(x + 40, y + 35, 5, true);
+      circle(x + 60, y + 35, 5, true);
+
+      circle(x + 50, y + 90, 5, true);
+      circle(x + 50, y + 110, 5, true);
+      circle(x + 50, y + 130, 5, true);
+
+      ctx.fillStyle = "Orange";
+      circle(x + 50, y + 45, 5, true);
+    };
+    drawSnowman(0,0)
+    drawSnowman(100,100)
+ 
+</script>
+</body>    
+</html>

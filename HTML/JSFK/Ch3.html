@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Insult generator </title>
+</head>
+<body>
+<script>
+
+
+// Insult generator #1
+
+var wordInsult = ["is a loser","is short","is dumb","doesn't love you", "is worth 4 dollars","said your life is meaningless"];
+var familyMember = ["mother","sister","brother","father","grandma","grandpa"];
+var randomFam = familyMember[Math.floor(Math.random()*6)];
+var randomInsults = wordInsult[Math.floor(Math.random()*6)];
+var Insult = "Your " + randomFam + " " + randomInsults;
+
+alert(Insult);
+
+// Insult generator #2
+
+var wordInsult = ["is a loser","is short","is dumb","doesn't love you", "is worth 4 dollars","said your life is meaningless"];
+var familyMember = ["mother","sister","brother","father","grandma","grandpa"];
+var randomFam = familyMember[Math.floor(Math.random()*6)];
+var randomInsults = wordInsult[Math.floor(Math.random()*6)];
+var Insult = ["Your", randomFam ,randomInsults].join(" ");
+alert(Insult);
+
+// Out of generator #1 and #2 I perfer the 1st one
+
+</script>
+</body>
+</html>

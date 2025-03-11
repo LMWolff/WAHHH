@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head> <title> Canvas Animation </title></head>
+<body>
+    <canvas id="canvas" width="600" height="600"></canvas>
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+<script>
+    var canvas = document.getElementById("canvas")
+    var ctx = canvas.getContext("2d")
+
+    var position = 0
+    var place = 0
+    ctx.fillStyle = "pink"
+
+    var size = 0
+
+    setInterval(function(){
+        ctx.clearRect (0,0,600,600)
+        ctx.fillRect(position,place,size,size)
+
+        size++
+        if (size>600){
+            size=0
+        }
+
+        position++
+        if (position>600){
+            position=0
+        }
+        place++
+        if (place>600){
+            place=0
+        }
+    }, .5)
+</script>
+</body>    
+</html>

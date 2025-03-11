@@ -1,0 +1,30 @@
+//Objects
+var ratking = {
+    "Tail": 8,
+    "feet": 32,
+    "rats":8,
+    "diameter": "4cm",
+    "Found":"Estonia"
+};
+
+ratking;
+
+var card_deck = {
+    "cards": 52,
+    "height": "3.5in",
+    "Thickness": ".24mm",
+    "Poker_help": "yes",
+    "Jacks": 2
+};
+
+card_deck;
+
+var fridge = {
+    "left_overs":"tacos"
+    "numberOfDonuts": 2
+    "Apples": 4
+    "Cucumber": 20
+    "Pop": "30cans"
+};
+
+fridge;

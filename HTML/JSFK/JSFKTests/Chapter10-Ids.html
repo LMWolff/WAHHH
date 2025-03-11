@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Test</title></head>
+<body>
+<script>
+// var timeUp = function(){ 
+//     alert("Pneumonoultramicroscopicsilicovolcanoconiosis")
+// }
+
+// var doHomeWork = function(){
+//     alert("Do work!")
+// }
+// var timeoutID0 = setTimeout(timeUp, 3000)
+// var timeoutID1 = setTimeout(doHomeWork,6000)
+// console.log(timeoutID0)
+// console.log(timeoutID1)
+// clearTimeout(timeoutID0)
+
+var counter = 1
+
+var printMessage= function(){
+    console.log("You've been looking at the console for "+ counter +" seconds")
+    counter++
+}
+var intervalID = setInterval(printMessage,0.1)
+
+
+</script>
+</body>
+</html>

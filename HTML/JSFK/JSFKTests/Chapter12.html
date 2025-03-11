@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head> <title> test </title></head>
+<body>
+<script>
+    var leopardon = {
+    name:"Magical Leopardon",
+    fins: 4,
+    showsTheWay: true,
+    age: 20
+}
+
+leopardon.roar = function(){
+    console.log("Roar...(That way)-"+this.name +".")
+    alert("Roar...(That way)-"+this.name +".")
+
+
+}
+var speak = function(){
+    console.log("Oh God, what is that? -"+this.name+"." )
+    alert("Oh God, what is that? -"+this.name+"." )
+}
+
+var unicorn = {
+    name: "Charlie",
+    kidneys: 1,
+    hasHorn: false,
+    speak: speak,
+    sound: "Gasp"
+}
+
+console.log(leopardon)
+console.log(unicorn)
+leopardon.roar()
+unicorn.speak()
+</script>
+</body>    
+</html>
